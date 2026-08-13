@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Shadman Shakib — Perception &amp; Action Researcher</title>
-<meta name="description" content="Shadman Shakib — graduate researcher in experimental and ecological psychology at the University of Southern Mississippi. Affordance perception, perception–action, and virtual-reality methods." />
+<meta name="description" content="Shadman Shakib — PhD student and graduate researcher in experimental and ecological psychology at the University of Southern Mississippi." />
 <meta name="author" content="Shadman Shakib" />
 <meta property="og:title" content="Shadman Shakib — Perception &amp; Action Researcher" />
 <meta property="og:description" content="Studying how perceptual exploration and body size shape the affordances we perceive — built and tested in virtual reality." />
@@ -226,6 +226,34 @@ img{max-width:100%;display:block}
   background:linear-gradient(90deg,transparent,rgba(233,184,114,.35),transparent)}
 
 .hero-inner{position:relative;z-index:2;width:100%}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(2rem, 5vw, 4rem);
+  flex-wrap: wrap-reverse;
+}
+.hero-text-col {
+  flex: 1 1 500px;
+}
+.hero-img-col {
+  flex: 0 0 auto;
+}
+.hero-img {
+  width: 280px;
+  height: 280px;
+  border-radius: calc(var(--r) + 8px);
+  object-fit: cover;
+  border: 1px solid var(--line-2);
+  box-shadow: 0 20px 50px -10px rgba(0,0,0,0.5);
+  transform: rotate(2deg);
+  transition: transform 0.4s var(--ease), border-color 0.4s var(--ease);
+}
+.hero-img:hover {
+  transform: rotate(-1deg) translateY(-5px);
+  border-color: var(--accent);
+}
+
 .hero-tag{margin-bottom:1.7rem}
 .hero h1{
   font-family:var(--serif);font-weight:400;font-optical-sizing:auto;
@@ -529,6 +557,12 @@ img{max-width:100%;display:block}
   .hero-stats{grid-template-columns:repeat(2,1fr);gap:1.6rem 1rem}
   .honor-grid{grid-template-columns:1fr;gap:2rem}
   .skill-grid{grid-template-columns:1fr}
+  .hero-content { justify-content: center; text-align: center; }
+  .hero-img-col { margin-bottom: 1.5rem; }
+  .hero h1 { margin-left: auto; margin-right: auto; }
+  .hero-lead { margin-left: auto; margin-right: auto; }
+  .hero-cta { justify-content: center; }
+  .hero-meta { justify-content: center; }
 }
 @media (max-width:560px){
   .focus-grid,.proj-grid,.svc-grid{grid-template-columns:1fr}
@@ -599,29 +633,36 @@ img{max-width:100%;display:block}
     <div class="hero-horizon"></div>
   </div>
   <div class="wrap hero-inner">
-    <div class="hero-tag reveal"><span class="kicker"><i>◦</i> Experimental &amp; Ecological Psychology · Hattiesburg, MS</span></div>
-    <h1 class="reveal">
-      <span class="ln">Perceiving</span>
-      <span class="ln">what the body <em>can do.</em></span>
-    </h1>
-    <div class="hero-role reveal">Affordance Perception · Perception–Action · Virtual Reality</div>
-    <p class="hero-lead reveal">
-      I'm <strong style="color:var(--ink);font-weight:600">Shadman Shakib</strong>, a graduate researcher at the University of Southern Mississippi studying how perceptual exploration and body size shape the actions we perceive as possible — and building immersive experiments to put those questions to the test.
-    </p>
-    <div class="hero-cta reveal">
-      <a href="#research" class="btn btn-primary">Explore my research <span class="arr">→</span></a>
-      <a href="Shadman_Shakib_CV.pdf" class="btn btn-ghost" download>Download CV</a>
-    </div>
-    <div class="hero-meta reveal">
-      <span class="chip"><span class="dot"></span>Master's Candidate · School of Psychology</span>
-      <span class="chip"><span class="dot"></span>Advisor: Dr. Alen Hajnal</span>
-      <span class="chip"><span class="dot"></span>Thesis in progress</span>
-    </div>
-    <div class="hero-stats reveal">
-      <div class="stat"><div class="num">04</div><div class="lbl">Conference<br>Presentations</div></div>
-      <div class="stat"><div class="num">09</div><div class="lbl">Courses<br>Taught (TA)</div></div>
-      <div class="stat"><div class="num">07</div><div class="lbl">Awards &amp;<br>Grants</div></div>
-      <div class="stat"><div class="num">02</div><div class="lbl">Research<br>Publications</div></div>
+    <div class="hero-content">
+      <div class="hero-text-col">
+        <div class="hero-tag reveal"><span class="kicker"><i>◦</i> Experimental &amp; Ecological Psychology · Hattiesburg, MS</span></div>
+        <h1 class="reveal">
+          <span class="ln">Perceiving</span>
+          <span class="ln">what the body <em>can do.</em></span>
+        </h1>
+        <div class="hero-role reveal">PhD Student · Affordance Perception · Virtual Reality</div>
+        <p class="hero-lead reveal">
+          I'm <strong style="color:var(--ink);font-weight:600">Shadman Shakib</strong>, a PhD student at the University of Southern Mississippi studying how perceptual exploration and body size shape the actions we perceive as possible — and building immersive experiments to put those questions to the test.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#research" class="btn btn-primary">Explore my research <span class="arr">→</span></a>
+          <a href="Shadman_Shakib_CV.pdf" class="btn btn-ghost" download>Download CV</a>
+        </div>
+        <div class="hero-meta reveal">
+          <span class="chip"><span class="dot"></span>PhD expected Spring 2028</span>
+          <span class="chip"><span class="dot"></span>Master's expected Fall 2026</span>
+          <span class="chip"><span class="dot"></span>Advisor: Dr. Alen Hajnal</span>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat"><div class="num">04</div><div class="lbl">Conference<br>Presentations</div></div>
+          <div class="stat"><div class="num">09</div><div class="lbl">Courses<br>Taught (TA)</div></div>
+          <div class="stat"><div class="num">07</div><div class="lbl">Awards &amp;<br>Grants</div></div>
+          <div class="stat"><div class="num">02</div><div class="lbl">Research<br>Publications</div></div>
+        </div>
+      </div>
+      <div class="hero-img-col reveal">
+        <img src="headshot 2.png" alt="Shadman Shakib" class="hero-img" />
+      </div>
     </div>
   </div>
   <div class="scroll-cue" aria-hidden="true"><span class="bar"></span> Scroll</div>
@@ -637,7 +678,7 @@ img{max-width:100%;display:block}
     <div class="about-grid">
       <div class="about-prose reveal">
         <p class="lede">I study a deceptively simple question: how do we perceive what we are able to do?</p>
-        <p>As a graduate researcher in the School of Psychology at the <strong>University of Southern Mississippi</strong>, I work with Dr. Alen Hajnal on perception and action. My focus is <strong>affordances</strong> — the actions an environment makes possible, such as stepping over a gap or ducking under a barrier — and how factors like body size, posture, and illumination shape the way observers perceive them.</p>
+        <p>As a <strong>PhD student</strong> in the School of Psychology at the <strong>University of Southern Mississippi</strong>, I work with Dr. Alen Hajnal on perception and action. My focus is <strong>affordances</strong> — the actions an environment makes possible, such as stepping over a gap or ducking under a barrier — and how factors like body size, posture, and illumination shape the way observers perceive them.</p>
         <p>To test these questions with precision, I build immersive experiments in virtual reality. With no prior programming background, I designed and deployed two fully functional Unity experimental tasks by directing AI to generate the C# scripts and game logic, then validated them to produce reliable, reproducible behavioral data. Alongside research, I have served as a teaching assistant across <strong>nine psychology courses</strong>, from General Psychology to Sensation and Perception.</p>
       </div>
       <aside class="facts reveal">
@@ -647,8 +688,8 @@ img{max-width:100%;display:block}
           <div class="row"><dt>Affiliation</dt><dd>Univ. of Southern Mississippi<small>School of Psychology</small></dd></div>
           <div class="row"><dt>Advisor</dt><dd>Dr. Alen Hajnal</dd></div>
           <div class="row"><dt>Based in</dt><dd>Hattiesburg, Mississippi</dd></div>
-          <div class="row"><dt>Status</dt><dd>Master's thesis in progress</dd></div>
-          <div class="row"><dt>Toolkit</dt><dd>Unity · VR (Oculus) · Blender<small>SPSS · JASP · MATLAB</small></dd></div>
+          <div class="row"><dt>Status</dt><dd>PhD Student (Expected Spring 2028)</dd></div>
+          <div class="row"><dt>Degree</dt><dd>MS expected Fall 2026</dd></div>
         </dl>
       </aside>
     </div>
@@ -674,7 +715,7 @@ img{max-width:100%;display:block}
     </div>
 
     <div class="featured reveal">
-      <div class="ftag">Featured · Master's Thesis</div>
+      <div class="ftag">Featured · Graduate Thesis</div>
       <h3>How do perceptual exploration and body size influence the affordances of stepping over and ducking under obstacles?</h3>
       <p>An ongoing thesis investigating how an observer's body dimensions and active perceptual exploration shape judgments of whether obstacles can be stepped over or ducked under — examined through controlled, immersive virtual-reality tasks.</p>
       <div class="meta">
@@ -790,8 +831,7 @@ img{max-width:100%;display:block}
     </div>
 
     <div class="pub-actions reveal">
-      <!-- TODO: replace href="#" with your Google Scholar profile URL -->
-      <a href="#" class="btn btn-ghost" target="_blank" rel="noopener">View on Google Scholar <span class="arr">→</span></a>
+      <a href="https://scholar.google.com/scholar?q=Shadman+Shakib" class="btn btn-ghost" target="_blank" rel="noopener">View on Google Scholar <span class="arr">→</span></a>
     </div>
   </div>
 </section>
@@ -811,7 +851,8 @@ img{max-width:100%;display:block}
         <div class="edu-head">
           <div>
             <h3>University of Southern Mississippi</h3>
-            <div class="deg">Master's Candidate · School of Psychology · Experimental &amp; Ecological Psychology</div>
+            <div class="deg">PhD Candidate · School of Psychology · Experimental &amp; Ecological Psychology</div>
+            <div class="deg" style="color:var(--ink-mute); font-size: 0.74rem;">Master's Expected Fall 2026 · PhD Expected Spring 2028</div>
           </div>
           <div class="when">2024 — Present</div>
         </div>
@@ -941,13 +982,15 @@ img{max-width:100%;display:block}
         <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
         Email
       </a>
-      <!-- TODO: replace href="#" with your Google Scholar profile URL -->
-      <a href="#" target="_blank" rel="noopener" aria-label="Google Scholar">
+      <a href="https://scholar.google.com/scholar?q=Shadman+Shakib" target="_blank" rel="noopener" aria-label="Google Scholar">
         <svg viewBox="0 0 24 24"><path d="M12 2 1 9l11 7 9-5.7V16h2V9L12 2zM5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 4.4-7-4.4z"/></svg>
         Google Scholar
       </a>
-      <!-- TODO: replace href="#" with your LinkedIn profile URL -->
-      <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <a href="https://www.researchgate.net/profile/Shadman-Shakib" target="_blank" rel="noopener" aria-label="ResearchGate">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><path d="M5.52 16h12.96"/></svg>
+        ResearchGate
+      </a>
+      <a href="https://www.linkedin.com/in/shadman-shakib/" target="_blank" rel="noopener" aria-label="LinkedIn">
         <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
         LinkedIn
       </a>
